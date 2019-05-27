@@ -1,6 +1,6 @@
 <?php
 
-namespace Backpack\PageManager;
+namespace Backpack\TranslatablePageManager;
 
 use Route;
 use Illuminate\Routing\Router;
@@ -20,7 +20,7 @@ class PageManagerServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public $routeFilePath = '/routes/backpack/pagemanager.php';
+    public $routeFilePath = '/routes/backpack/translatable-pagemanager.php';
 
     /**
      * Perform post-registration booting of services.
@@ -36,12 +36,12 @@ class PageManagerServiceProvider extends ServiceProvider
         // publish migrations
         $this->publishes([__DIR__.'/database/migrations' => database_path('migrations')], 'migrations');
         // public config
-        $this->publishes([__DIR__.'/config/pagemanager.php' => config_path('backpack/pagemanager.php')]);
+        $this->publishes([__DIR__.'/config/translatable-pagemanager.php' => config_path('backpack/translatable-pagemanager.php')]);
         // public languages
         $this->publishes([__DIR__.'/resources/lang' => resource_path('lang/vendor/backpack')], 'lang');
 
-        $this->mergeConfigFrom(__DIR__.'/config/pagemanager.php', 'backpack.pagemanager');
-        $this->loadViewsFrom(realpath(__DIR__.'/resources/views/vendor/backpack/crud'), 'pagemanager');
+        $this->mergeConfigFrom(__DIR__.'/config/translatable-pagemanager.php', 'backpack.pagemanager');
+        $this->loadViewsFrom(realpath(__DIR__.'/resources/views/vendor/backpack/crud'), 'translatable-pagemanager');
     }
 
     /**
