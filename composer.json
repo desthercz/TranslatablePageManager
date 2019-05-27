@@ -15,7 +15,7 @@
         "pagemanager",
         "admin panel"
     ],
-    "homepage": "https://github.com/laravel-backpack/PageManager",
+    "homepage": "https://github.com/desthercz/TranslatablePageManager",
     "license": "proprietary",
     "authors": [
         {
@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Backpack\\PageManager\\": "src"
+            "Backpack\\TranslatablePageManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Backpack\\PageManager\\": "tests"
+            "Backpack\\TranslatablePageManager\\": "tests"
         }
     },
     "scripts": {
@@ -56,7 +56,7 @@
         },
         "laravel": {
             "providers": [
-                "Backpack\\PageManager\\PageManagerServiceProvider"
+                "Backpack\\TranslatablePageManager\\TranslatablePageManagerServiceProvider"
             ]
         }
     }
