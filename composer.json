@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Backpack\\PageManager\\": "src"
+            "Desthercz\\PageManager\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Backpack\\PageManager\\": "tests"
+            "Desthercz\\PageManager\\": "tests"
         }
     },
     "scripts": {
