@@ -4,14 +4,16 @@ namespace Backpack\PageManager\app\Models;
 
 use Backpack\CRUD\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
-use Cviebrock\EloquentSluggable\Sluggable;
-use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Backpack\CRUD\ModelTraits\SpatieTranslatable\Sluggable;
+use Backpack\CRUD\ModelTraits\SpatieTranslatable\SluggableScopeHelpers;
+use Backpack\CRUD\ModelTraits\SpatieTranslatable\HasTranslations;
 
 class Page extends Model
 {
     use CrudTrait;
     use Sluggable;
     use SluggableScopeHelpers;
+    use HasTranslations;
 
     /*
     |--------------------------------------------------------------------------
@@ -27,6 +29,7 @@ class Page extends Model
     // protected $hidden = [];
     // protected $dates = [];
     protected $fakeColumns = ['extras'];
+    protected $translatable = ['title', 'slug', 'content'];
 
     /**
      * Return the sluggable configuration array for this model.
