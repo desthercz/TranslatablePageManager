@@ -1,5 +1,5 @@
 {
-    "name": "backpack/pagemanager",
+    "name": "desthercz/translatable-pagemanager",
     "type": "library",
     "description": "Create admin panels for presentation websites on Laravel, using page templates and Backpack\\CRUD.",
     "keywords": [
@@ -15,7 +15,7 @@
         "pagemanager",
         "admin panel"
     ],
-    "homepage": "https://github.com/laravel-backpack/PageManager",
+    "homepage": "https://github.com/desthercz/TranslatablePageManager",
     "license": "proprietary",
     "authors": [
         {
@@ -56,7 +56,7 @@
         },
         "laravel": {
             "providers": [
-                "Backpack\\PageManager\\PageManagerServiceProvider"
+                "Desthercz\\TranslatablePageManager\\PageManagerServiceProvider"
             ]
         }
     }
