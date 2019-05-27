@@ -14,7 +14,7 @@ Route::group([
         'middleware' => ['web', config('backpack.base.middleware_key', 'admin')],
         'prefix' => config('backpack.base.route_prefix', 'admin'),
     ], function () {
-        $controller = config('backpack.pagemanager.admin_controller_class', 'Backpack\TranslatablePageManager\app\Http\Controllers\Admin\PageCrudController');
+        $controller = config('backpack.translatable-pagemanager.admin_controller_class', 'Backpack\TranslatablePageManager\app\Http\Controllers\Admin\PageCrudController');
 
         // Backpack\TranslatablePageManager routes
         Route::get('page/create/{template}', $controller.'@create');
