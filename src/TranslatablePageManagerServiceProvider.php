@@ -6,7 +6,7 @@ use Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
-class PageManagerServiceProvider extends ServiceProvider
+class TranslatablePageManagerServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
