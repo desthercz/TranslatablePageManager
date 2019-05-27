@@ -14,7 +14,7 @@ class PageCrudController extends CrudController
 
     public function setup($template_name = false)
     {
-        $modelClass = config('backpack.pagemanager.page_model_class', 'Backpack\TranslatablePageManager\app\Models\Page');
+        $modelClass = config('backpack.translatable-pagemanager.page_model_class', 'Backpack\TranslatablePageManager\app\Models\Page');
 
         /*
         |--------------------------------------------------------------------------
