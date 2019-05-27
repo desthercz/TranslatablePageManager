@@ -1,6 +1,6 @@
 <?php
 
-namespace Backpack\PageManager\app\Models;
+namespace Backpack\TranslatablePageManager\app\Models;
 
 use Backpack\CRUD\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
