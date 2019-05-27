@@ -1,12 +1,12 @@
 <?php
 
-namespace Backpack\PageManager\app\Http\Controllers\Admin;
+namespace Backpack\TranslatablePageManager\app\Http\Controllers\Admin;
 
 use App\PageTemplates;
 // VALIDATION: change the requests to match your own file names if you need form validation
 use Backpack\CRUD\app\Http\Controllers\CrudController;
-use Backpack\PageManager\app\Http\Requests\PageRequest as StoreRequest;
-use Backpack\PageManager\app\Http\Requests\PageRequest as UpdateRequest;
+use Backpack\TranslatablePageManager\app\Http\Requests\PageRequest as StoreRequest;
+use Backpack\TranslatablePageManager\app\Http\Requests\PageRequest as UpdateRequest;
 
 class PageCrudController extends CrudController
 {
@@ -14,7 +14,7 @@ class PageCrudController extends CrudController
 
     public function setup($template_name = false)
     {
-        $modelClass = config('backpack.pagemanager.page_model_class', 'Backpack\PageManager\app\Models\Page');
+        $modelClass = config('backpack.pagemanager.page_model_class', 'Backpack\TranslatablePageManager\app\Models\Page');
 
         /*
         |--------------------------------------------------------------------------
